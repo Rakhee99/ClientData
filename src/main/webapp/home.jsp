@@ -9,7 +9,7 @@
 <body>
 <center>
 	<form action = "addProblem">
-		<p> Create New Row </p>
+		<h3> Create New Row </h3>
 		<label> ID : </label>
 		<input type="text" name="aid"><br>
 		<label>  Label : </label>
@@ -19,19 +19,19 @@
 		<input type="submit"><br>
 	</form>
 	<form action = "getProblem">
-		<p> Search by ID</p>
-		<label> id : </label>
+		<h3> Search by ID</h3>
+		<label> ID : </label>
 		<input type="text" name="aid"><br>
 		<input type="submit"><br>
 	</form>
 	<form action = "deleteProblem">
-		<p> Delete by ID </p>
-		<label> id : </label>
+		<h3> Delete by ID </h3>
+		<label> ID : </label>
 		<input type="text" name="aid"><br>
 		<input type="submit"><br>
 	</form>
 	<form action = "updateProblem">
-		<p> Update Details </p>
+		<h3> Update Details </h3>
 		<label> ID : </label>
 		<input type="text" name="aid"><br>
 		<label>  Label : </label>

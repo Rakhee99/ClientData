@@ -23,12 +23,12 @@ public class ProblemController
 	public String addProblem(Problem problem)
 	{
 		repo.save(problem);
-		return "CreatedRow.jsp";
+		return "createdIssue.jsp";
 	}
 	@RequestMapping("/getProblem")
 	public ModelAndView getAlien(@RequestParam int aid)
 	{
-		ModelAndView mv= new ModelAndView("ShowData.jsp");
+		ModelAndView mv= new ModelAndView("searchIssue.jsp");
 		Problem problem = repo.findById(aid).orElse(new Problem());
 		mv.addObject(problem);
 		return mv;
@@ -37,12 +37,12 @@ public class ProblemController
 	public String deleteProblem(@RequestParam Problem aid)
 	{
 		repo.delete(aid);
-		return "DeletedRow.jsp";
+		return "deletedIssue.jsp";
 	}
 	@RequestMapping("/updateProblem")
 	public String updateProblem(Problem problem, int aid)
 	{
 		repo.save(problem);
-		return "UpdateRow.jsp";
+		return "updateIssue.jsp";
 	}
 }

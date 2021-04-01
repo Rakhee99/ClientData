@@ -10,17 +10,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
 
 input[type=text] {
-  width: 100%;
+  width: 25%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
- input[type=des]  {
-  width: 100%;
-  padding: 40px 20px;
+input[type=submit] {
+  width: 10%;
+  padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -39,7 +38,7 @@ img.avatar {
 
 .format{
 color:#0b0bb1;
-  text-align: left;
+  text-align: center;
  
 };
   
@@ -52,16 +51,16 @@ color:#0b0bb1;
 	
 	<div class="format "><h2> Update Issue </h2></div>
 
-	<label for="aid"><b> UserID </b></label>
+	<label for="aid"><b> Employee-ID :  </b></label>
     	<input type="text" placeholder="Enter your ID here" name="aid" required>
-		
+		<br>
 	<label>  Label : </label>
 	<input type="text" placeholder="Enter Label" name="label" required>
-		
+		<br>
 	<label> Description : </label>
-	<input type="des" placeholder="Describe your Issue here" name="description" required>
-	
-	<input type="submit"><br>
+	<input type="text" placeholder="Describe your Issue here" name="description" required>
+	<br>
+	<input type="submit" ><br>
 	</form>
 
 </center>

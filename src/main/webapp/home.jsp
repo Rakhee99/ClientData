@@ -9,6 +9,14 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
 
+input[type=submit] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 .imgcontainer {
   text-align: center;
   margin: 24px 450 12px 450;
@@ -33,7 +41,7 @@ color:#0b0bb1;
 	<div class="format "><h4>WELCOME TO THE TCS Employee portal </h4></div>
 	<center>
 	<form action = "create.jsp">
-    	<button  class="format" type="submit">Click here to create new Issue</button>  
+    	<button  class="format" type="submit">Click here to Raise new Issue</button>  
 	</form>
 	<br>
 	<form action = "delete.jsp">

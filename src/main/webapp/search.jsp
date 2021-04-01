@@ -9,8 +9,16 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
 
-input[type=text], input[type=usrname], input[type=des], input[type=issue] {
-  width: 100%;
+input[type=text]{
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 10%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -18,14 +26,6 @@ input[type=text], input[type=usrname], input[type=des], input[type=issue] {
   box-sizing: border-box;
 }
 
- input[type=des]  {
-  width: 100%;
-  padding: 40px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
 
 .imgcontainer {
   text-align: center;
@@ -39,7 +39,7 @@ img.avatar {
 
 .format{
 color:#0b0bb1;
-  text-align: left;
+  text-align: center;
  
 };
   
@@ -52,9 +52,9 @@ color:#0b0bb1;
 	
 	<div class="format "><h2> Search Issue by ID </h2></div>
 
-	<label for="aid"><b> UserID </b></label>
+	<label for="aid"><b> Employee-ID : </b></label>
     	<input type="text" placeholder="Enter your ID here" name="aid" required>
-	
+	<br>
 	<input type="submit"><br>
 	</form>
 

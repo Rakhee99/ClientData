@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,10 +36,13 @@ public class ProblemController
 		return mv;
 	}
 	@RequestMapping("/deleteProblem")
-	public String deleteProblem(@RequestParam Problem aid)
+	public ModelAndView deleteProblem(@RequestParam int aid)
 	{
-		repo.delete(aid);
-		return "deletedIssue.jsp";
+		ModelAndView mv= new ModelAndView("deletedIssue.jsp");
+		Problem problem = repo.findById(aid).orElse(new Problem());
+		mv.addObject(problem);
+		repo.deleteById(aid);
+		return mv;
 	}
 	@RequestMapping("/updateProblem")
 	public String updateProblem(Problem problem, int aid)

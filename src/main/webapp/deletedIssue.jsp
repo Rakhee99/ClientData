@@ -14,7 +14,10 @@ color:#0b0bb1;
 </head>
 <body>
 
- 	<div class="format "><h3> Deleted Issue  </h3>
+ 	<div class="format ">
+ 	<h2> Issue Deleted Successfully...... ! </h2>
+ 	<h3> Details of Deleted Issue is : </h3>
+ 	<p> ${problem} </p>
 	</div>
 
 </body>

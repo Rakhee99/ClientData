@@ -14,7 +14,9 @@ color:#0b0bb1;
 </head>
 <body>
 
- 	<div class="format "><h3> Created Issue is : </h3>
+ 	<div class="format ">
+ 	<h2> Issue has been Raised Successfully...... ! </h2>
+ 	<h3> Details of Raised Issue is : </h3>
 	<p> ${problem} </p>
 	</div>
 

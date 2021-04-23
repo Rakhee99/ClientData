@@ -13,7 +13,7 @@ node{
     withSonarQubeEnv('SonarScanner'){
       bat "${mvnHome}/bin/mvn sonar:sonar"
       
-      timeout(time:10,unit:'HOURS'){
+      timeout(time:100,unit:'HOURS'){
                     def qg = waitForQualityGate()
                     if(qg.status !='OK')
                     {

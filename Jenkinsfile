@@ -2,6 +2,7 @@ node{
   stage('SCM checkout'){
     git 'https://github.com/Rakhee99/ClientData.git'
   }
+  
   /*stage('Compile-Package')
   {
     //get maven home path
